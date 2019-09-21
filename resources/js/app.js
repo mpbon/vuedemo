@@ -5,9 +5,10 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+// require('./bootstrap');
 
 window.Vue = require('vue');
+
 
 /**
  * The following block of code may be used to automatically register your
@@ -28,6 +29,40 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+// const app = new Vue({
+//     el: '#app',
+//     data: {
+//         firstName: 'Matt',
+//         lastName: 'Paley'
+//     }
+//
+// });
+
+
+
 const app = new Vue({
-    el: '#app'
+    el: '#vfor-app',
+    data: {
+        songs: [
+            {"song": "", "artist": ""},
+            "Cottoneye Joe",
+            "Itsy Bitsy",
+            "Twinkle Twinkle",
+        ],
+    },
+
+    methods:{
+        buttonClicked(){
+            var songs = 
+            this.songs.push(this.aSong);
+            this.artist.push(this.anArtist);
+        },
+        buttonClicked1(){
+            this.songs.pop(this.aSong);
+        },
+        buttonClicked2(){
+            this.songs = [];
+        },
+    }
+
 });
