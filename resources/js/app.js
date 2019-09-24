@@ -43,17 +43,18 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#vfor-app',
     data: {
-        songs: [
-            {"song": "", "artist": ""},
-            "Cottoneye Joe",
-            "Itsy Bitsy",
-            "Twinkle Twinkle",
-        ],
+        // songs: [
+        //     {song: "", artist: ""},
+        //     "Cottoneye Joe",
+        //     "Itsy Bitsy",
+        //     "Twinkle Twinkle",
+        // ],
+        songs.aSong: ''
     },
 
     methods:{
         buttonClicked(){
-            var songs = 
+            var songs =
             this.songs.push(this.aSong);
             this.artist.push(this.anArtist);
         },
