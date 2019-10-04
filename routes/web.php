@@ -27,3 +27,11 @@ Route::get('vfor', function () {
 Route::get('events', function () {
     return view('events');
 });;
+
+Route::get('more-binding', function () {
+    return view('more-binding');
+});;
+
+Route::get('playlist2', function () {
+    return view('playlist2');
+});;

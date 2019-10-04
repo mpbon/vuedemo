@@ -10,8 +10,8 @@
 
         <div id="vfor-app">
 
-            Song: <input type="text" name="aSong" v-model="aSong">
-            Artist: <input type="text" name="anArtist" v-model="anArtist">
+            Song: <input type="text" name="aSong" v-model="song">
+            Artist: <input type="text" name="anArtist" v-model="album">
 
             <button type="button" @click="buttonClicked();" name="button">Add Song</button>
 
@@ -21,7 +21,7 @@
 
             <br>
             <ul>
-                <li v-for="song in songs"> @{{ songs.song }} <p>by</p> @{{ songs.artist }}</li>
+                <li v-for="record in albumAndSinger"> @{{ record.album }} <p>by</p> @{{ record.song }}</li>
             </ul>
 
 
